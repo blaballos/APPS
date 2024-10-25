@@ -9,6 +9,7 @@ class Client {
         string last_name;
         string email;
         int phone;
+        vector<string> pets;
     public:
         Client (string n, string ln, string e, int p) {
             name = n;
