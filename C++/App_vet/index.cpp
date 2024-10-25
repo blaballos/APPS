@@ -3,13 +3,36 @@
 
 using std::cin, std::cout, std::vector, std::string;
 
+
+class Pet {
+    private:
+        string name;
+        string type;
+    public:
+        string getName() {
+            return name;
+        }
+
+        string getType() {
+            return type;
+        }
+
+        void setName(string name_new) {
+            name = name_new;
+        }
+
+        void setType(string type_new) {
+            name = type_new;
+        }
+};
+
 class Client {
     private:
         string name;
         string last_name;
         string email;
         int phone;
-        vector<string> pets;
+        Pet pet;
     public:
         Client (string n, string ln, string e, int p) {
             name = n;
