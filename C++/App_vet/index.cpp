@@ -10,7 +10,12 @@ class Client {
         string email;
         int phone;
     public:
-        // Add Constructor
+        Client (string n, string ln, string e, int p) {
+            name = n;
+            last_name = ln;
+            email = e;
+            phone = p;
+        }
 
         string getName() {
             return name;
