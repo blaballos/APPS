@@ -3,6 +3,8 @@
 
 using std::cin, std::cout, std::vector, std::string;
 
+vector<Client> client_list{};
+
 class Client {
     private:
         string name;
@@ -50,6 +52,13 @@ class Client {
             phone = phone_new;
         }
 };
+
+void register_client(Client client) {
+    client_list.push_back(client);
+    string name = client.getName();
+    string last_name = client.getLastName();
+    cout << name << last_name << "fue registrado correctamente.";
+}
 
 int main() {
 
