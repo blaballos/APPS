@@ -60,6 +60,16 @@ void register_client(Client client) {
     cout << name << last_name << "fue registrado correctamente.";
 }
 
+void show_client() {
+    for (auto client : client_list) {
+        string name = client.getName();
+        string last_name = client.getLastName();
+        string email = client.getEmail();
+
+        cout << name << last_name << email << "\n";
+    }
+}
+
 int main() {
 
 }
