@@ -3,7 +3,6 @@
 
 using std::cin, std::cout, std::vector, std::string;
 
-
 class Pet {
     private:
         string name;
@@ -17,11 +16,11 @@ class Pet {
             return type;
         }
 
-        void setName(string name_new) {
+        void setNamePet(string name_new) {
             name = name_new;
         }
 
-        void setType(string type_new) {
+        void setTypePet(string type_new) {
             name = type_new;
         }
 };
@@ -76,6 +75,7 @@ class Client {
 
 vector<Client> client_list{};
 void register_client(Client client);
+void register_pet();
 void show_client();
 
 int main() {
@@ -109,4 +109,8 @@ void show_client() {
             cout << name << " " << last_name << " " << email << "\n";
         }
     }
+}
+
+void register_pet() {
+ // pass
 }
